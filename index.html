@@ -1,30 +1,335 @@
 <!--
 Requirements
-[  ] Google Font OR Uploaded Font
-[  ] font-size OR font-style 
-[  ] Five CSS Rules
-[  ] Three Images
+[ done ] Google Font OR Uploaded Font
+[done  ] font-size OR font-style 
+[ done ] Five CSS Rules
+[ done ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a Static Background Image
 [ no ] Feature 2 - Use a unique border-radius
-[ no ] Feature 3 - Use width and margin CSS Properties
+[ yes ] Feature 3 - Use width and margin CSS Properties
 [ no ] Feature 4 - Include at least one more additional HTML page
 -->
 
 <!DOCTYPE html>
 <html>
+  <h6>myspace</h6>
+  <h1>Avery Wernicki</h1>
+  <head1>
+    <title> </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
 
-<head>
-  <title>Unit 4 Project</title>
-  <meta charset="utf-8">
-  <style>
+    <style>
+      h6 {
+        color: rgb(250, 250, 250);
+      }
+      h3 {
+        color: rgb(250, 250, 250);
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 150px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
 
-  </style>
-</head>
-<body>
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
 
- 
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
 
-</body>
+      /* Position the front and back side */
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-color: black;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      body {
+        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdbda959-da8e-48b0-95f8-7c01db16033c/d1ad1i8-aeeead87-7dea-4775-94da-2bcff0a9a347.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NkYmRhOTU5LWRhOGUtNDhiMC05NWY4LTdjMDFkYjE2MDMzY1wvZDFhZDFpOC1hZWVlYWQ4Ny03ZGVhLTQ3NzUtOTRkYS0yYmNmZjBhOWEzNDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.e39MTXybNHfrnglagkYtGJ5oo1z7vFhUYKcPN95jCa0);
+      }
+      h1 {
+        color: rgb(250, 250, 250);
+      }
+      h1:hover {
+        background-color: rgb(25, 25, 250);
+      }
+
+      h1 {
+        font-family: "Sixtyfour Convergence", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      h2 {
+        color: rgb(250, 250, 250);
+      }
+      /*       ! {
+        color: rgb(250, 250, 250);
+      }
+      * {
+        color: rgb(250, 250, 250);
+      }
+      ? {
+        color: rgb(250, 250, 250);
+      } */
+      h6 {
+        color: rgb(250, 250, 250);
+      }
+
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      th {
+        background-color: #f0f6ff;
+        color: black;
+      }
+      td {
+        background-color: #f0f6ff;
+        color: black;
+      }
+    </style>
+  </head1>
+  <body>
+    <img
+      src="https://media.tenor.com/SyqH4TDyW9oAAAAM/hit-me-up-on-myspace.gif"
+    />
+    <h3>* B *L* O* G*</h3>
+    <br />
+    <div class="flex-container">
+      <div>ppp</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <img
+      src="https://i.redd.it/g54b4z7syec71.gif"
+      alt="Computer man"
+      style="width: 150px; height: 150px"
+    />
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            src="https://cdn.glitch.global/a068fa55-8107-40a3-b514-a14cbc292618/IMG_6014.jpg?v=1731639585066"
+            alt="Avatar"
+            style="width: 150px; height: 200px"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>BOO</h1>
+          <p>surprise its me</p>
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+<table cellspacing="10" cellpadding="0" border="0">
+					<tbody><tr>
+					<td colspan="2"><div id="mysname">Avery Wernicki</div></td>
+					</tr>
+					<tr>
+					<td><img src="https://cdn.glitch.global/a068fa55-8107-40a3-b514-a14cbc292618/IMG_6014.jpg?v=1731639585066" width="120" height="180" alt=""></td>
+					<td>
+					<div id="mystext" style="color: rgb(102, 153, 204);">
+					<p>
+					Male <br>17 years old<br>new york, new york<br>United States
+					</p>
+					<div id="mysonline"><img src="	https://www.layoutgeneratormyspace.com/inc/lg/images/onlinenow.gif" alt="" width="80" height="20" border="0"></div>
+					<p>Last Login: 07/26/2007</p>
+					</div>
+					</td>
+					</tr>
+					<tr>
+					<td align="center">
+					<a id="myslink" href="javascript:void('0');" onmouseover="kpe_link('hover')" onmouseout="kpe_link('')" style="color: rgb(0, 51, 153); font-weight: bold; font-style: normal; text-decoration: none;">View More Pics</a>
+					</td>
+					<td>&nbsp;</td>
+					</tr>
+					</tbody></table>
+   
+   <div id="mystitle" style="color: rgb(10, 15, 20);">Contacting Member Name</div>
+    <div id="mystable1" style="border-color: rgb(102, 102, 102); background-color: rgb(150, 20, 10);">
+					<table cellspacing="10" cellpadding="0" border="0">
+					<tbody><tr>
+					<td colspan="2"><div id="myinfo"></div></td>
+					</tr>
+					<tr>
+					<td><img src="http://www.themyspacelayout.com/images/berfe.jpg" width="120" height="180" alt=""></td>
+					<td>
+					<div id="mystextforinfo" style="color: rgb(40, 146, 230); font-family: &quot;Times New Roman&quot;;">
+					<p>
+					<br><br><br>
+					</p>
+					
+				
+					
+    <br />
+
+    <iframe
+      width="420"
+      height="315"
+      src="https://www.youtube.com/embed/PtzhvJh9NRY?si=Vikm47b-hDiGQirtplaylist=tgbNymZ7vqY&loop=1"
+    >
+    </iframe>
+
+    <img
+      src="https://i.pinimg.com/originals/0d/9f/e2/0d9fe27c1c4aedc297fc57a1fe067cc4.gif"
+      alt="Computer man"
+      style="width: 150px; height: 100px"
+    />
+    <br />
+
+    <br />
+    <img
+      src="https://cdn.glitch.global/a068fa55-8107-40a3-b514-a14cbc292618/IMG_6011.jpg?v=1731639573165"
+      width="100"
+    />
+    <br />
+    <img
+      src="https://cdn.glitch.global/a068fa55-8107-40a3-b514-a14cbc292618/IMG_6013.jpg?v=1731639580857"
+      width="100"
+    />
+    <br />
+    <img
+      src="https://cdn.glitch.global/a068fa55-8107-40a3-b514-a14cbc292618/IMG_6008.jpg?v=1731639617112"
+      width="100"
+    />
+    <br />
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img
+            src="https://cdn.glitch.global/a068fa55-8107-40a3-b514-a14cbc292618/IMG_6012.jpg?v=1731639577363"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img
+            src="https://cdn.glitch.global/a068fa55-8107-40a3-b514-a14cbc292618/IMG_6009.jpg?v=1731639623001"
+            alt="Forest"
+            width="50"
+            height="50"
+          />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img
+            src="https://cdn.glitch.global/a068fa55-8107-40a3-b514-a14cbc292618/IMG_6010.jpg?v=1731639600589"
+            alt="Northern Lights"
+            width="50"
+            height="50"
+          />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img
+            src="https://cdn.glitch.global/a068fa55-8107-40a3-b514-a14cbc292618/IMG_6007.jpg?v=1731639610927"
+            alt="Mountains"
+            width="50"
+            height="50"
+          />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div style="padding: 6px"></div>
+  </body>
 </html>
